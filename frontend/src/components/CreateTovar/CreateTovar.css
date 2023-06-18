@@ -1,0 +1,9 @@
+.addItem-content {
+	width: 300px;
+	height: 300px;
+	background-color: white;
+	display: flex;
+	flex-direction: column;
+	row-gap: 10px;
+	padding: 30px;
+}

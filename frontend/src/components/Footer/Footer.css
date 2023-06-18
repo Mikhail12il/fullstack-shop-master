@@ -1,0 +1,30 @@
+footer{
+	margin-top: 20px;
+	position: relative;
+}
+footer .logo{
+	font-weight: 600; 
+	font-size: 20px;
+	margin-right: 80%;
+}
+
+footer ul.nav{
+	float: right;
+	list-style: none;
+}
+
+footer ul.nav li {
+	display: inline;
+	margin-left: 25px;
+	cursor: pointer;
+	transition: opacity 500ms ease;
+}
+
+footer ul.nav li:hover{
+	opacity: 0.5;
+}
+
+footer .prava {
+	text-align: center;
+	margin-top: 50px;
+}

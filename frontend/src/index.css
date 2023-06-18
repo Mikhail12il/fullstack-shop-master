@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    background-color: #fff;
+    color: #222;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+}
+
+.wrapper {
+    width: 1280px;
+    margin: 50px auto;
+}
+
+
+.presentetion{
+	margin: 50px 0;
+	background: url('./img/XXL.webp') no-repeat;
+	width: 100%;
+	height: 500px;
+	background-size: cover;
+	background-position: center center;
+	background-blend-mode: multiply;
+	background-color: #bcb;
+	position: relative;
+	
+}
+
+.presentetion::after{
+	content: 'Построй свой дом с нашими материалами';
+	position: absolute;
+	top: 100px;
+	left: 50px;
+	width: 350px;
+	font-size: 40px;
+	font-weight: 600;
+	color: #fff;
+}
+
+.presentetion::before{
+	content: 'по хорошей цене';
+	position: absolute;
+	top: 250px;
+	left: 50px;
+	width: 350px;
+	font-size: 15px;
+	font-weight: 300;
+	color: #fff;
+}
