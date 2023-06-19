@@ -22,7 +22,7 @@ app.use("/orders", ordersRouter);
 
 async function dbsConnect() {
 	try {
-		await mongoose.connect('mongodb://10.100.3.210:27017/shop');
+		await mongoose.connect('mongodb://0.0.0.0:27017/shop');
 		console.log('База подключена');
 	} catch (error) {
 		console.log(error);
