@@ -43,7 +43,7 @@ export const Header = () => {
             <li>
               {user
                 ? <Link to={'/profile'}>личный кабинет</Link>
-                : <button onClick={() => setLoginOpen(true)}>Войти</button>
+                : <button className='exit' onClick={() => setLoginOpen(true)}>Войти</button>
               }
             </li>
           </ul>

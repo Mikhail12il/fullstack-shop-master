@@ -11,7 +11,7 @@ export const LoginAndReg = (props) => {
 	const { open, setOpen } = props
 
 	const [isLogin, setIsLogin] = useState(true)
-	const [userForm, setUserForm] = useState({ username: '', password: '' })
+	const [userForm, setUserForm] = useState({ tel: '', username: '', password: ''  })
 
 	const { setUser } = useContext(Context)
 
@@ -32,6 +32,13 @@ export const LoginAndReg = (props) => {
 		<div className={cn('login', { 'open': open })}>
 			<div className='login-content'>
 				<button onClick={() => setOpen(false)}>Закрыть</button>
+				
+				<input
+					type="text"
+					placeholder='tel'
+					value={userForm.tel}
+					onChange={e => setUserForm({ ...userForm, tel: e.target.value })}
+				/>
 				<input
 					type="text"
 					placeholder='Логин'
@@ -39,7 +46,7 @@ export const LoginAndReg = (props) => {
 					onChange={e => setUserForm({ ...userForm, username: e.target.value })}
 				/>
 				<input
-					type="text"
+					type="password"
 					placeholder='Пароль'
 					value={userForm.password}
 					onChange={e => setUserForm({ ...userForm, password: e.target.value })}

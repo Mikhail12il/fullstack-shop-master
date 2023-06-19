@@ -17,9 +17,9 @@ export const Item = (props) => {
   return (
     <div className='item'>
       <img src={item.imgSrc} alt='asd' onClick={() => onShowItem(item)} />
-      <h2>Название = {item.title}</h2>
-      <p>Описание = {item.desc}</p>
-      <b>Цена = {item.price}</b>
+      <h2>Название - {item.title}</h2>
+      <p>Описание - {item.desc}</p>
+      <b>Цена - {item.price}</b>
       <p>{item.available}</p>
       <div className="btns">
         {item.available === 'Есть в наличии' && <div className='add-to-cart' onClick={() => onAdd(item)}>+</div>}

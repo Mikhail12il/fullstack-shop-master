@@ -98,14 +98,3 @@ header .shop-cart .summa{
 	font-size: 20px;
 	margin-bottom: 20px;
 }
-.exit{
-	display: inline-block;
-	background: #ffd1d1;
-	border-radius: 50px;
-	color: white;
-	padding: 10px 20px;
-	cursor: pointer;
-	border: 1px solid transparent;
-	margin-bottom: 20px;
-}
-
