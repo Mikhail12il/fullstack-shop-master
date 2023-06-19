@@ -19,6 +19,7 @@ export const Item = (props) => {
       <img src={item.imgSrc} alt='asd' onClick={() => onShowItem(item)} />
       <h2>Название - {item.title}</h2>
       <p>Описание - {item.desc}</p>
+      <p>Категория - {item.category}</p>
       <b>Цена - {item.price}</b>
       <p>{item.available}</p>
       <div className="btns">

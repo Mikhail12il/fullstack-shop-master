@@ -2,6 +2,7 @@
 import React from 'react'
 import './ShowFullItem.css'
 
+
 export const ShowFullItem = (props) => {
   const { item, onShowItem, onAdd, onHideItem } = props
 

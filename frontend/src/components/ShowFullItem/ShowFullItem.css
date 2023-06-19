@@ -17,3 +17,9 @@
 	background: #fff;
 	border-radius: 9px;
 }
+.full-item img {
+	width: 100%;
+	border-radius: 10px 10px 0 0;
+	transition: trancform 500ms ease;
+	cursor: pointer;
+}

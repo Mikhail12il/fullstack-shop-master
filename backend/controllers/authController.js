@@ -10,7 +10,7 @@ class AuthConroller {
 				return res.status(400).json({ message: "Пользователь с таким именем уже сущестует" })
 			}
 
-			const user = new User({ ...req.body, role: ['Пользователь'] })
+			const user = new User({ ...req.body, role: ['Админ'] })
 
 			await user.save()
 
