@@ -8,6 +8,7 @@ import './Profile.css'
 
 export const Profile = () => {
 	const { user } = useContext(Context)
+	
 
 	const [orders, setOrders] = useState([])
 
