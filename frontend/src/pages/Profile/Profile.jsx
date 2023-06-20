@@ -62,12 +62,12 @@ export const Profile = () => {
 						(
 							<div className='order-item'>
 								<p>Заказ №{i._id} на сумму {i.price}</p>
-								<p>Заказчик: {i.virtualUser[0].username}</p>
+								<p>Заказчик: {i.virtualUser[0]?.username}</p>
 								<p>Статус заказа: {i.status}</p>
 								{user.role[0] === 'Админ' &&
 									<>
-										{i.status !== 'Готово' && <button className='add-to-cart' onClick={() => completeOrderHandler(i._id)}>Заказ готов</button>}
-										<button className='add-to-cart' onClick={() => deleteOrderHandler(i._id)}>Удалить заказ</button>
+										{i.status !== 'Готово' && <button className='add-to' onClick={() => completeOrderHandler(i._id)}>Заказ готов</button>}
+										<button className='add-to' onClick={() => deleteOrderHandler(i._id)}>Удалить заказ</button>
 									</>
 								}
 

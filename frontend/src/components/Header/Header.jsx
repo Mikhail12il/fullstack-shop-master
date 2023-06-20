@@ -58,7 +58,7 @@ export const Header = () => {
               {selectedItems.length > 0 ?
                 <>
                   <Orders onDelet={deleteItem} orders={selectedItems} />
-                  <button onClick={createOrder}>Заказать</button>
+                  <button className='add-too' onClick={createOrder}>Заказать</button>
                 </>
                 :
                 <div className='empty'>

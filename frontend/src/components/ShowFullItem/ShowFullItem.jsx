@@ -9,10 +9,12 @@ export const ShowFullItem = (props) => {
   return (
     <div className='full-item' onClick={onHideItem}>
       <div onClick={e => e.stopPropagation()}>
-        <img src={"./img/" + item.img} onClick={() => onShowItem(item)} />
-        <h2>{item.title}</h2>
-        <p>{item.desc}</p>
-        <b>{item.price}</b>
+        <img src={item.imgSrc} onClick={() => onShowItem(item)} />
+        <h2>Название -{item.title}</h2>
+        <p>Описание -{item.desc}</p>
+        <p>Категория - {item.category}</p>
+        <b>Цена - {item.price}</b>
+      
         <div
           className='add-to-cart'
           onClick={() => {

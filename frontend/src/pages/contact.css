@@ -5,9 +5,10 @@
 }
 .contacts__list{
 	padding: 20px;
-	min-width: 370px;
+	min-width: 500px;
 	border: 1px solid #E0E0E0;
-    margin: 100px 0 0 100px;
+   	margin-top: 70px;
+	margin-left: 150px;
 }
 .contacts__list ul{
 	margin-top: 20px;

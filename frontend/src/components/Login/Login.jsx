@@ -31,28 +31,28 @@ export const LoginAndReg = (props) => {
 	return (
 		<div className={cn('login', { 'open': open })}>
 			<div className='login-content'>
-				<button onClick={() => setOpen(false)}>Закрыть</button>
+				<button className='bre' onClick={() => setOpen(false)}>Закрыть</button>
 				
-				<input
+				<input className='br'
 					type="text"
 					placeholder='tel'
 					value={userForm.tel}
 					onChange={e => setUserForm({ ...userForm, tel: e.target.value })}
 				/>
-				<input
+				<input className='br'
 					type="text"
 					placeholder='Логин'
 					value={userForm.username}
 					onChange={e => setUserForm({ ...userForm, username: e.target.value })}
 				/>
-				<input
+				<input className='br'
 					type="password"
 					placeholder='Пароль'
 					value={userForm.password}
 					onChange={e => setUserForm({ ...userForm, password: e.target.value })}
 				/>
-				<button onClick={isLogin ? loginHandler : registrHandler}>{isLogin ? 'Войти' : 'Регистрация'}</button>
-				<button onClick={() => setIsLogin(prev => !prev)}>{isLogin ? 'Нет аккаунта?' : 'Войти'}</button>
+				<button className='bre' onClick={isLogin ? loginHandler : registrHandler}>{isLogin ? 'Войти' : 'Регистрация'}</button>
+				<button className='bre' onClick={() => setIsLogin(prev => !prev)}>{isLogin ? 'Нет аккаунта?' : 'Войти'}</button>
 			</div>
 		</div>
 	)

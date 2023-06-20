@@ -10,8 +10,8 @@
 	padding: 10px;
 	border-radius: 10px;
 }
-.add-to-cart{
-	display: inline-block;
+.add-to{
+	
 	background: #f2f2f2;
 	border-radius: 50px;
 	padding: 10px 10px;
@@ -20,7 +20,16 @@
 	border: 1px solid transparent;
 	transition: all 500ms ease;
 }
-
+.add-to-cart{
+	
+	background: #f2f2f2;
+	border-radius: 50px;
+	padding: 10px 10px;
+	margin-right: 15px;
+	cursor: pointer;
+	border: 1px solid transparent;
+	transition: all 500ms ease;
+}
 .add-to-cart:hover{
 	border-color: silver;
 	transform: scale(1.1);

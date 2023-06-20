@@ -7,9 +7,9 @@ export const Order = (props) => {
 
   return (
     <div className='item'>
-      <img src={"./img/" + item.img} />
-      <h2>{item.title}</h2>
-      <b>{item.price}</b>
+      <img src={item.imgSrc} />
+      <h2>Название - {item.title}</h2>
+      <b>Цена - {item.price}</b>
       <FaTrash className='delet-icon' onClick={() => onDelet(item._id)} />
     </div>
   )

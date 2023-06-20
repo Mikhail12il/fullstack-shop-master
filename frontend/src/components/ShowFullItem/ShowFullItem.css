@@ -23,3 +23,10 @@
 	transition: trancform 500ms ease;
 	cursor: pointer;
 }
+.add-to-cart {
+	display: flex;
+	margin-top: 20px;
+	margin-left: 550px;
+	flex-direction: row-reverse;
+	column-gap: 10px;
+}
