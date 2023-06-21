@@ -23,10 +23,23 @@
 	transition: trancform 500ms ease;
 	cursor: pointer;
 }
-.add-to-cart {
-	display: flex;
+.add-to-cart-full {
 	margin-top: 20px;
 	margin-left: 550px;
+	padding-right: 15px;
 	flex-direction: row-reverse;
 	column-gap: 10px;
+	background: #ca5252;
+	width: 15px;
+	height: 15px;
+	line-height: 35px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #fff;
+	padding: 10px 10px;
+	border-radius: 50%;
+	cursor: pointer;
+	font-weight: 600;
+	transition: transform 500ms ease;
 }

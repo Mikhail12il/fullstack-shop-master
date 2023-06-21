@@ -14,14 +14,18 @@ export const ShowFullItem = (props) => {
         <p>Описание -{item.desc}</p>
         <p>Категория - {item.category}</p>
         <b>Цена - {item.price}</b>
-      
-        <div
-          className='add-to-cart'
-          onClick={() => {
-            onAdd(item);
-            onHideItem();
-          }}
-        >+</div>
+
+        {item.available === 'Есть в наличии' &&
+          <div
+            className='add-to-cart-full'
+            onClick={() => {
+              onAdd(item);
+              onHideItem();
+            }}
+          >
+            +
+          </div>
+        }
       </div>
     </div>
   )

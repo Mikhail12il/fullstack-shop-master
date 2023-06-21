@@ -35,23 +35,26 @@ export const Header = () => {
     <>
       <LoginAndReg open={loginOpen} setOpen={setLoginOpen} />
       <header>
-        <div>
-          <Link to={'/'} className='logo'>Construction Materials</Link>
-          <ul className='nav'>
-            <li><Link to={'/about'}>про нас</Link></li>
-            <li><Link to={'/contacts'}>контакты</Link></li>
-            <li>
-              {user
-                ? <Link to={'/profile'}>личный кабинет</Link>
-                : <button className='exit' onClick={() => setLoginOpen(true)}>Войти</button>
-              }
-            </li>
-          </ul>
+        <div className='header-inner'>
 
-          <FaShoppingCart
-            onClick={() => setCartOpen(prev => !prev)}
-            className={`shop-cart-batton ${cartOpen && 'active'}`}
-          />
+          <Link to={'/'} className='logo'>Construction Materials</Link>
+          <div style={{ display: 'flex', alignItems: 'center' }}>
+            <FaShoppingCart
+              onClick={() => setCartOpen(prev => !prev)}
+              className={`shop-cart-batton ${cartOpen && 'active'}`}
+            />
+
+            <ul className='nav'>
+              <li><Link to={'/about'}>про нас</Link></li>
+              <li><Link to={'/contacts'}>контакты</Link></li>
+              <li>
+                {user
+                  ? <Link to={'/profile'}>личный кабинет</Link>
+                  : <button className='exit' onClick={() => setLoginOpen(true)}>Войти</button>
+                }
+              </li>
+            </ul>
+          </div>
 
           {cartOpen && (
             <div className='shop-cart'>

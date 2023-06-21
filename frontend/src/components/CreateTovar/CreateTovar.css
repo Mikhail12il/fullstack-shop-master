@@ -6,4 +6,18 @@
 	flex-direction: column;
 	row-gap: 10px;
 	padding: 30px;
+	
+}
+.addItem-content input {
+	border: 1px solid red;
+	border-radius: 10px;
+	padding: 5px 10px;
+}
+
+.addItem-content button {
+	background: red;
+	color: white;
+	padding: 10px;
+	border: none;
+	cursor: pointer;
 }
