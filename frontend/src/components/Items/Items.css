@@ -22,19 +22,22 @@
 }
 
 .items-inner {
-	display: flex;
+	display: grid;
 	width: 100%;
-	flex-wrap: wrap;
-	justify-content: space-between;
+	grid-template-columns: 1fr 1fr 1fr;
+	gap: 30px;
 }
 
 .items-inner .item {
-	width: 30%;
-	margin-bottom: 50px;
 	background: #f5f5f5;
 	overflow: hidden;
 	position: relative;
 	padding-bottom: 20px;
+	
+}
+.items-inner .item img{
+	height: 300px;
+	object-fit: cover;
 }
 
 .items-inner .item img,
@@ -43,6 +46,7 @@
 	border-radius: 10px 10px 0 0;
 	transition: trancform 500ms ease;
 	cursor: pointer;
+	display: flex;
 }
 
 .items-inner .item img:hover,

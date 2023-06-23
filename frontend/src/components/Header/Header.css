@@ -101,12 +101,12 @@ header .shop-cart .summa{
 }
 .exit{
 	display: inline-block;
-	background: #ffd1d1;
+	background: #db5151;
 	border-radius: 50px;
-	color: white;
 	padding: 10px 20px;
 	cursor: pointer;
 	border: 1px solid transparent;
+	color: #f2f2f2;
 }
 .add-too{
 	background: #f2f2f2;

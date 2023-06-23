@@ -13,7 +13,8 @@ export const Categories = (props) => {
     const [categories, setCategories] = useState([])
 
     useEffect(() => {
-        setCategories(['Всё', ...items.map(i => i.category)])
+        const cat = new Set(items.map(i => i.category))
+        setCategories(['Всё', ...cat])
     }, [items])
 
     return (
