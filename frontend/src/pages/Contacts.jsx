@@ -15,7 +15,6 @@ export const Contacts = () => {
 					<div class="contacts__list">
 						<p class="contacts-title">КОНТАКТЫ</p>
 						<ul>
-							<li class="contacts__item contacts-address">​улица Чехова 19, ТЦ Рублёв ​​111 павильон; 1 этаж</li>
 							<li class="contacts__item contacts-phone">8-800-555-35-35</li>
 							<li class="contacts__item contacts-mail">shop@gmail.com</li>
 						</ul>
@@ -29,7 +28,7 @@ export const Contacts = () => {
 						<br/>
 						<p class="contacts-title">ОПЛАТА</p>
 						<ul class="delivery__list">
-							<li class="contacts__item contacts-address">Наличный расчёт</li>
+							<li class="contacts__item contacts-address">Наличный расчёт, доставщику</li>
 						</ul>
 					</div>
 					
